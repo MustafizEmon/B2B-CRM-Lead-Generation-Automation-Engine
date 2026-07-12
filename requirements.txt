@@ -1,0 +1,24 @@
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+pydantic==2.10.3
+pydantic-settings==2.7.0
+email-validator>==2.0.0
+
+# --- LangChain / Groq ---
+langchain>=0.3.13
+langchain-core>=0.3.28
+langchain-groq>=0.2.2
+
+# --- Data / analytics ---
+pandas>=2.2.3
+numpy>=2.2.1
+matplotlib>=3.10.0
+seaborn==0.13.2
+openpyxl==3.1.5
+faker==33.1.0
+
+# --- Utilities ---
+python-dotenv==1.0.1
+tqdm==4.67.1

@@ -1,0 +1,171 @@
+2026-07-11 21:53:49,958 | INFO    | crm_ai.main            | AI CRM Sales Automation API starting. env=development llm_configured=True dry_run=True reply_mode=simulated model=openai/gpt-oss-120b
+2026-07-11 22:12:14,738 | INFO    | crm_ai.ingestion       | Loaded 10 leads from uploaded CSV 'Lead.csv'.
+2026-07-11 22:12:14,755 | INFO    | crm_ai.validation      | Validation complete: 10 clean, 0 rejected.
+2026-07-11 22:12:14,757 | INFO    | crm_ai.api.leads       | Batch batch_e67ac9889989 created from upload 'Lead.csv': 10 clean, 0 rejected.
+2026-07-11 22:16:05,166 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:16:05,244 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.64s.
+2026-07-11 22:16:08,272 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:16:08,278 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.03s.
+2026-07-11 22:16:08,281 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 54.3s for headroom.
+2026-07-11 22:17:05,892 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:17:05,894 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.28s.
+2026-07-11 22:17:08,593 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:17:08,596 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.70s.
+2026-07-11 22:17:08,597 | INFO    | crm_ai.email           | [DRY RUN] Would send to xmarshall@mcbride.info | subject='Quick win for Jacobs, Monroe and Washington before the holiday rush'
+2026-07-11 22:17:08,597 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 54.0s for headroom.
+2026-07-11 22:18:04,748 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:18:04,750 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.12s.
+2026-07-11 22:18:07,227 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:18:07,229 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.48s.
+2026-07-11 22:18:07,230 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 55.4s for headroom.
+2026-07-11 22:19:06,574 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:19:06,579 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.94s.
+2026-07-11 22:19:09,723 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:19:09,725 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.14s.
+2026-07-11 22:19:09,726 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 52.9s for headroom.
+2026-07-11 22:20:05,527 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:20:05,533 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.89s.
+2026-07-11 22:20:05,534 | INFO    | crm_ai.email           | [DRY RUN] Would send to odomkurt@lewis.com | subject='Ensuring compliance without stretching your budget'
+2026-07-11 22:20:05,536 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 1.0s for headroom.
+2026-07-11 22:20:08,656 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:20:08,658 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.06s.
+2026-07-11 22:20:11,373 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:20:11,379 | INFO    | crm_ai.llm             | [follow_up] attempt 1 succeeded in 2.72s.
+2026-07-11 22:20:11,383 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 51.3s for headroom.
+2026-07-11 22:21:05,185 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:21:05,190 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.53s.
+2026-07-11 22:21:05,192 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 1.4s for headroom.
+2026-07-11 22:21:06,608 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 2.1s for headroom.
+2026-07-11 22:21:12,453 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:21:12,459 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.79s.
+2026-07-11 22:21:12,461 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 50.2s for headroom.
+2026-07-11 22:22:06,259 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:22:06,265 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.59s.
+2026-07-11 22:22:06,267 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 2.4s for headroom.
+2026-07-11 22:22:11,375 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:22:11,380 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.70s.
+2026-07-11 22:22:11,381 | INFO    | crm_ai.email           | [DRY RUN] Would send to patrick18@schroeder.org | subject='Kelly, a quick idea for Mcintyre’s Q4 budget push'
+2026-07-11 22:22:11,383 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 51.3s for headroom.
+2026-07-11 22:23:04,709 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:23:04,712 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.03s.
+2026-07-11 22:23:07,079 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:23:07,084 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.37s.
+2026-07-11 22:23:07,086 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 1.6s for headroom.
+2026-07-11 22:23:08,693 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 54.0s for headroom.
+2026-07-11 22:24:06,103 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:24:06,108 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.42s.
+2026-07-11 22:24:09,374 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:24:09,380 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.27s.
+2026-07-11 22:24:09,382 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 53.3s for headroom.
+2026-07-11 22:25:05,637 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:25:05,642 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.94s.
+2026-07-11 22:25:05,750 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 0.5s for headroom.
+2026-07-11 22:25:08,258 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:25:08,261 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.00s.
+2026-07-11 22:25:11,585 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:25:11,590 | INFO    | crm_ai.llm             | [follow_up] attempt 1 succeeded in 3.33s.
+2026-07-11 22:25:11,595 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 51.1s for headroom.
+2026-07-11 22:26:05,034 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:26:05,039 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.33s.
+2026-07-11 22:26:05,041 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 1.2s for headroom.
+2026-07-11 22:26:06,277 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 2.0s for headroom.
+2026-07-11 22:26:11,746 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:26:11,749 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.47s.
+2026-07-11 22:26:11,750 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 51.0s for headroom.
+2026-07-11 22:27:05,815 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:27:05,819 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.10s.
+2026-07-11 22:27:05,821 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 2.5s for headroom.
+2026-07-11 22:27:10,740 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:27:10,746 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.47s.
+2026-07-11 22:27:10,751 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 52.0s for headroom.
+2026-07-11 22:28:04,857 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:28:04,863 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.14s.
+2026-07-11 22:28:07,256 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:28:07,261 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.39s.
+2026-07-11 22:28:07,264 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 1.0s for headroom.
+2026-07-11 22:28:08,288 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 54.4s for headroom.
+2026-07-11 22:29:06,503 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:29:06,509 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.77s.
+2026-07-11 22:29:10,026 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:29:10,032 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.52s.
+2026-07-11 22:29:10,034 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 52.7s for headroom.
+2026-07-11 22:30:05,533 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:30:05,540 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.79s.
+2026-07-11 22:30:05,541 | INFO    | crm_ai.email           | [DRY RUN] Would send to olivia.carter@brightmail.co | subject='Olivia, a quick way to cut Parker & Blake’s cloud spend before the FY freeze'
+2026-07-11 22:30:05,542 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 1.0s for headroom.
+2026-07-11 22:30:08,720 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:30:08,725 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.20s.
+2026-07-11 22:30:11,362 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:30:11,369 | INFO    | crm_ai.llm             | [follow_up] attempt 1 succeeded in 2.64s.
+2026-07-11 22:30:11,374 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 51.4s for headroom.
+2026-07-11 22:31:05,286 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:31:05,288 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.53s.
+2026-07-11 22:31:05,289 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 1.2s for headroom.
+2026-07-11 22:31:06,534 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 2.2s for headroom.
+2026-07-11 22:31:12,852 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:31:12,862 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 4.12s.
+2026-07-11 22:31:12,864 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 49.9s for headroom.
+2026-07-11 22:32:06,501 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:32:06,507 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.75s.
+2026-07-11 22:32:06,509 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 2.2s for headroom.
+2026-07-11 22:32:11,404 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:32:11,410 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.66s.
+2026-07-11 22:32:11,421 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 51.3s for headroom.
+2026-07-11 22:33:05,144 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:33:05,149 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.39s.
+2026-07-11 22:33:05,152 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 3.6s for headroom.
+2026-07-11 22:33:12,348 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:33:12,350 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.59s.
+2026-07-11 22:33:12,351 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 50.4s for headroom.
+2026-07-11 22:34:05,986 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:34:05,991 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.23s.
+2026-07-11 22:34:05,994 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 2.8s for headroom.
+2026-07-11 22:34:11,233 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:34:11,238 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.46s.
+2026-07-11 22:34:11,239 | INFO    | crm_ai.email           | [DRY RUN] Would send to sophia.bennett@clearpath.org | subject='A quick win for ClearPath’s upcoming compliance deadline'
+2026-07-11 22:34:11,241 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 51.5s for headroom.
+2026-07-11 22:35:05,002 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:35:05,007 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.23s.
+2026-07-11 22:35:08,872 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:35:08,879 | INFO    | crm_ai.llm             | [follow_up] attempt 1 succeeded in 3.87s.
+2026-07-11 22:35:11,277 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:35:11,282 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.40s.
+2026-07-11 22:35:11,284 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 51.5s for headroom.
+2026-07-11 22:36:02,792 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 2.2s for headroom.
+2026-07-11 22:36:08,721 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:36:08,726 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 3.71s.
+2026-07-11 22:36:08,729 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 0.5s for headroom.
+2026-07-11 22:36:13,767 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:36:13,773 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 4.53s.
+2026-07-11 22:36:13,774 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 51.2s for headroom.
+2026-07-11 22:37:07,686 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:37:07,691 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.66s.
+2026-07-11 22:37:07,698 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 1.5s for headroom.
+2026-07-11 22:37:11,602 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:37:11,608 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.35s.
+2026-07-11 22:37:14,567 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:37:14,574 | INFO    | crm_ai.llm             | [follow_up] attempt 1 succeeded in 2.96s.
+2026-07-11 22:37:14,578 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 50.5s for headroom.
+2026-07-11 22:38:07,538 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:38:07,544 | INFO    | crm_ai.llm             | [lead_scoring] attempt 1 succeeded in 2.50s.
+2026-07-11 22:38:07,546 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 1.7s for headroom.
+2026-07-11 22:38:09,276 | INFO    | crm_ai.llm             | Nearing TPM budget (4096/6800 used); waiting 2.3s for headroom.
+2026-07-11 22:38:15,779 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:38:15,789 | INFO    | crm_ai.llm             | [buyer_persona] attempt 1 succeeded in 4.17s.
+2026-07-11 22:38:15,791 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 49.2s for headroom.
+2026-07-11 22:39:08,163 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:39:08,170 | INFO    | crm_ai.llm             | [sales_strategy] attempt 1 succeeded in 3.12s.
+2026-07-11 22:39:08,172 | INFO    | crm_ai.llm             | Nearing TPM budget (6144/6800 used); waiting 3.4s for headroom.
+2026-07-11 22:39:14,255 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:39:14,257 | INFO    | crm_ai.llm             | [email_generation] attempt 1 succeeded in 2.63s.
+2026-07-11 22:39:14,257 | INFO    | crm_ai.email           | [DRY RUN] Would send to ava.richardson@luminahub.co | subject='A quick way to boost Lumina Hub’s enrollment ahead of your board meeting'
+2026-07-11 22:39:14,258 | INFO    | crm_ai.llm             | Nearing TPM budget (5120/6800 used); waiting 50.8s for headroom.
+2026-07-11 22:40:07,118 | INFO    | httpx                  | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 22:40:07,123 | INFO    | crm_ai.llm             | [response_classifier] attempt 1 succeeded in 2.06s.
+2026-07-11 22:40:07,124 | INFO    | crm_ai.pipeline        | Campaign campaign_ce5f7e5a529b complete. 10/10 leads processed successfully.
+2026-07-11 22:40:09,408 | INFO    | crm_ai.analytics       | Saved 12 charts to 'storage/outputs\campaign_ce5f7e5a529b/'.
+2026-07-11 22:40:09,418 | INFO    | crm_ai.reporting       | Exported CSV -> storage/outputs\campaign_ce5f7e5a529b\leads_processed.csv
+2026-07-11 22:40:09,420 | INFO    | crm_ai.reporting       | Exported Markdown report -> storage/reports\campaign_ce5f7e5a529b\campaign_report.md
+2026-07-11 22:40:09,827 | INFO    | crm_ai.reporting       | Exported Excel report -> storage/reports\campaign_ce5f7e5a529b\campaign_report.xlsx
+2026-07-11 22:40:09,827 | INFO    | crm_ai.api.campaigns   | Campaign campaign_ce5f7e5a529b completed successfully.
+2026-07-11 22:52:46,003 | INFO    | crm_ai.main            | AI CRM Sales Automation API shutting down.
